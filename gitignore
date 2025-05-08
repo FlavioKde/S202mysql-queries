@@ -1,0 +1,26 @@
+
+# MySQL Workbench temp files
+*.mwb.bak
+*.bak
+*.tmp
+*.log
+
+# MySQL dump files
+*.sql
+
+# General system files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.idea/
+*.iml
+
+# Node and Python (if used for scripting)
+node_modules/
+__pycache__/
+*.pyc
+.env
+
+# Logs
+*.log
