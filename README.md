@@ -1,5 +1,6 @@
 🗃️ Database Exercises Repository
 
+
 📄 Description
 Project Overview
 This repository contains SQL exercises for querying and managing databases, including:
