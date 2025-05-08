@@ -1,140 +1,157 @@
-🗃️ Database Exercises Repository
+# 🗃️ Database Exercises Repository
 
-📄 Description
-Project overview
+## 📄 Description
+
+### Project Overview
+
 This repository contains SQL exercises for querying and managing databases, including:
 
-Tienda database: product and manufacturer queries
+- **Tienda Database**: Product and manufacturer queries
+- **Universidad Database**: Student, professor, and course queries
 
-Universidad database: student, professor, and course queries
+### Exercises Cover:
 
-🧠 Exercises Cover
-The exercises include:
+- Basic to advanced SQL queries (`SELECT`, `JOIN`, `GROUP BY`, subqueries)
+- Data filtering, aggregation, and sorting
+- Handling `NULL` values and complex conditions
 
-Basic to advanced SQL queries (SELECT, JOIN, GROUP BY, subqueries)
+---
 
-Data filtering, aggregation, and sorting
+## 💻 Technologies Used
 
-Handling NULL values and complex conditions
+### Tools & Languages
 
-💻 Technologies Used
-Tools & languages
+- 🐬 **MySQL** (Primary database system)
+- 📊 **SQL** (Structured Query Language)
+- 🔄 **Git** (Version control)
 
-🐬 MySQL (primary database system)
+---
 
-📊 SQL (Structured Query Language)
+## 📋 Requirements
 
-🔄 Git (version control)
+### Prerequisites
 
-📋 Requirements
-Prerequisites
+- MySQL Server (v8.0+)
+- MySQL Workbench or equivalent (e.g., DBeaver, phpMyAdmin)
+- Basic SQL knowledge
 
-MySQL Server (v8.0+)
+---
 
-MySQL Workbench or equivalent (e.g., DBeaver, phpMyAdmin)
+## 🛠️ Installation
 
-Basic SQL knowledge
+### Setup Steps
 
-🛠️ Installation
-Setup steps
+1. Clone the repository:
 
-Clone the repository:
-
-bash
-Copiar
-Editar
+```bash
 git clone [your-repo-url.git]
-Import the database schemas:
+```
 
-schema_universidad.sql
+2. Import the database schemas:
 
-(Optional) tienda.sql (if provided separately)
+   - `schema_universidad.sql`
+   - *(Optional)* `tienda.sql` (if provided separately)
 
-Use a SQL client to execute queries.
+3. Use a SQL client to execute queries.
 
-▶️ Execution
-How to run queries
+---
 
-Open the SQL file for the exercise (e.g., 3.1-Bases-de-Dades.sql)
+## ▶️ Execution
 
-Execute queries in your MySQL client
+### How to Run Queries
 
-Verify results against the expected output
+- Open the SQL file for the exercise (e.g., `3.1-Bases-de-Dades.sql`).
+- Execute queries in your MySQL client.
+- Verify results against the expected output.
 
-🌐 Deployment
-For production
+---
+
+## 🌐 Deployment
+
+### For Production
 
 These are practice exercises; deployment is not applicable.
+
 For real-world use, consider:
 
-Database backups
+- Database backups
+- Index optimization
 
-Index optimization
+---
 
-Access control and user roles
+## 🤝 Contributions
 
-🤝 Contributions
-Guidelines
+### Guidelines
 
 Contributions are welcome! Follow these steps:
 
-Fork the repository
+1. Fork the repository.
+2. Create a branch:
 
-Create a branch:
-
-bash
-Copiar
-Editar
+```bash
 git checkout -b feature/your-feature
-Commit changes:
+```
 
-bash
-Copiar
-Editar
+3. Commit changes:
+
+```bash
 git commit -m "Add: [Your improvement]"
-Push and submit a pull request
+```
 
-📌 Important Notes
-🔍 Consistency: queries follow standardized formatting
+4. Push and submit a Pull Request.
 
-✅ Quality: all solutions are tested in MySQL
+---
 
-❓ Need help? open an issue for clarifications
+## 📌 Important Notes
 
-📂 Example Exercise: 3.1 - Bases de Dades
-Description
+- 🔍 **Consistency**: Queries follow standardized formatting.
+- ✅ **Quality**: All solutions are tested in MySQL.
 
-Query a product inventory database (tienda) to:
+---
 
-List products by price, manufacturer, and filters
+## ❓ Need Help?
 
-Use JOINs, subqueries, and aggregation
+Open an issue for clarifications.
 
-💡 Sample solution:
+---
 
-sql
-Copiar
-Editar
+## 📂 Example Exercise: *3.1-Bases de Dades*
+
+### 📄 Description
+
+**Task**: Query a product inventory database (`tienda`) to:
+
+- List products by price, manufacturer, and filters.
+- Use `JOIN`s, subqueries, and aggregation.
+
+### 💡 Sample Solution
+
+```sql
 -- List products with manufacturers (using JOIN)
 SELECT p.nombre, p.precio, f.nombre AS fabricante
 FROM producto p
 JOIN fabricante f ON p.codigo_fabricante = f.codigo;
-🎓 Universidad Database Exercises
-Key challenges
+```
 
-Complex JOINs across alumno, profesor, and asignatura tables
+---
 
-Handling NULL values (e.g., unassigned professors)
+## 🎓 Universidad Database Exercises
 
-🔍 Example:
+### Key Challenges
 
-sql
-Copiar
-Editar
+- Complex `JOIN`s across `alumno`, `profesor`, and `asignatura` tables.
+- Handling `NULL` values (e.g., unassigned professors).
+
+### 🔍 Example
+
+```sql
 -- Students born in 1999
 SELECT nombre, apellido1, apellido2
 FROM persona
 WHERE tipo = 'alumno' AND YEAR(fecha_nacimiento) = 1999;
-🚀 Happy Querying!
-Practice makes perfect—try optimizing queries for performance! 🎯
+```
 
+---
+
+🚀 *Happy Querying!*  
+Practice makes perfect—try optimizing queries for performance!
