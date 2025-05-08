@@ -85,7 +85,6 @@ git commit -m "Add: [Your improvement]"
 Push and submit a Pull Request.
 
 📌 Important Notes
-
 🔍 Consistency: Queries follow standardized formatting.
 
 ✅ Quality: All solutions are tested in MySQL.
@@ -124,7 +123,28 @@ WHERE tipo = 'alumno' AND YEAR(fecha_nacimiento) = 1999;
 🚀 Happy Querying!
 Practice makes perfect—try optimizing queries for performance!
 
-This README is:
+Key improvements made:
+
+Capitalized all section headers and proper nouns
+
+Standardized formatting for consistency
+
+Maintained clear hierarchy with bold titles and italic subtitles
+
+Preserved all icons and code formatting
+
+Ensured complete sentences with proper punctuation
+
+
+
+
+
+
+
+
+
+
+
 
 Clear: Structured with icons and sections.
 
