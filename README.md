@@ -95,7 +95,7 @@ git checkout -b feature/your-feature
 3. Commit changes:
 
 ```bash
-git commit -m "Add: [Your improvement]"
+git commit -m "Add: https://github.com/FlavioKde/S202mysql-queries.git"
 ```
 
 4. Push and submit a Pull Request.
