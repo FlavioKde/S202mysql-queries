@@ -154,4 +154,4 @@ WHERE tipo = 'alumno' AND YEAR(fecha_nacimiento) = 1999;
 ---
 
 🚀 *Happy Querying!*  
-Practice makes perfect—try optimizing queries for performance!
+
