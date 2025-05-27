@@ -98,7 +98,7 @@ SELECT p.nombre AS nombre_producto, precio, f.nombre AS nombre_fabricante FROM p
 SELECT p.nombre AS nombre_producto, precio, f.nombre AS nombre_fabricante FROM producto p JOIN fabricante f WHERE p.precio >=180 ORDER BY p.precio DESC , p.nombre ASC; 
 
 -- 33-Returns a list with the manufacturer code and name, only of those manufacturers that have associated products in the database
-SELECT DISTINCT f.codigo, f.nombre FROM fabricante f JOIN producto p ON f.codigo = p.codigo_fabricante;
+SELECT DISTINCT f.codigo AS 'Código fabricante', f.nombre AS 'Nombre fabricante' FROM fabricante f JOIN producto p ON f.codigo = p.codigo_fabricante WHERE p.nombre IS NOT NULL ORDER BY f.codigo ASC;
 
 -- 34-Returns a list of all manufacturers that exist in the database, along with the products that each of them has. The list should also show those manufacturers that do not have associated products.
 SELECT f.nombre AS nombre_fabricante, p.nombre AS nombre_producto FROM fabricante f LEFT JOIN producto p ON f.codigo = p.codigo_fabricante;
